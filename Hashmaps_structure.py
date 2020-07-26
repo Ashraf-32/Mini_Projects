@@ -30,6 +30,3 @@ class HashMap:
                 return item[1]
         return None
 
-
-
-
