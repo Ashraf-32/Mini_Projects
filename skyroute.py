@@ -72,7 +72,7 @@ def set_start_and_end(start_point, end_point):
 def get_active_stations():
     updated_metro = vc_metro
     for station_under_construction in stations_under_construction:
-        for current_station, neighboring_station in vc_metro.items():
+        for current_station in vc_metro.keys():
             if current_station != station_under_construction:
                 updated_metro[current_station] -= set(stations_under_construction)
             else:
